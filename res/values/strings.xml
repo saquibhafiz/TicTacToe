@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Saquibs Awesome Tic Tac Toe</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="game_mode">Game Mode</string>
+    <string name="starting_piece">Starting Piece</string>
+    <string name="rematch">Rematch</string>
+    <string name="start_a_new_game">Start a New Game</string>
+    <string name="tic_tac_toe">TIC TAC TOE</string>
+    <string name="player_x_">"Player X : "</string>
+    <string name="player_0_">"Player 0 : "</string>
+    <string name="pvp_image">PVP Image</string>
+    <string name="pve_image">PVE Image</string>
+    <string name="piece_x_image">Piece X Image</string>
+    <string name="piece_o_image">Piece O Image</string>
+
+</resources>

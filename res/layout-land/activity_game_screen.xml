@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp" >
+
+    <Button
+        android:id="@+id/rematch_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/winner_announcement"
+        android:layout_alignParentBottom="true"
+        android:text="@string/rematch"
+        android:visibility="invisible" />
+
+    <fragment
+        android:id="@+id/game_board_fragment"
+        android:name="com.example.saquibsawesometictactoe.fragments.GameboardFragment"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@+id/rematch_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        class="com.example.saquibsawesometictactoe.fragments.GameboardFragment" />
+
+    <fragment
+        android:id="@+id/game_score_fragment"
+        android:name="com.example.saquibsawesometictactoe.fragments.GameScoreFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rematch_button"
+        android:layout_centerVertical="true"
+        class="com.example.saquibsawesometictactoe.fragments.GameScoreFragment" />
+
+    <TextView
+        android:id="@+id/winner_announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/game_board_fragment"
+        android:layout_marginLeft="16dp"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+    
+</RelativeLayout>
